@@ -1,0 +1,47 @@
+{
+    "name": "brute-force-generator",
+    "version": "0.0.0",
+    "description": "Build a dictionary by permuting passed letters (using ES2015+)",
+    "main": "src/index.js",
+    "bin": "bin/cli.js",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf dist/ coverage/ .nyc_output/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "jasmine test/**/*.js",
+        "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
+    },
+    "dependencies": {
+        "yargs": "^13.2.4"
+    },
+    "devDependencies": {
+        "coveralls": "^3.0.3",
+        "jasmine": "^3.4.0",
+        "nyc": "^14.1.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/brute-force-generator.git"
+    },
+    "files": [
+        "bin",
+        "src"
+    ],
+    "keywords": [
+        "brute",
+        "force",
+        "brute force",
+        "generate",
+        "generator",
+        "dictionary",
+        "dict",
+        "permutation",
+        "string",
+        "tree"
+    ]
+}
