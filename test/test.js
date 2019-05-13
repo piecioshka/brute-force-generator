@@ -27,6 +27,21 @@ it('should be a function', () => {
     expect(generate).toEqual(jasmine.any(Function));
 });
 
+it('should not generate any items when passed empty alphabet', () => {
+    const gen = generate();
+    let empty = true;
+
+    for (let char of gen) {
+        empty = false;
+    }
+
+    expect(empty).toBeTruthy();
+});
+
+it('should return list of all values when string size is default', () => {
+    check(fixture3);
+});
+
 it('should return list of all values when string size equals 1', () => {
     const level = 1;
     check(fixture1, level);
