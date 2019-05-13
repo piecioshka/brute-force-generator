@@ -9,7 +9,7 @@
  *   console.log(record); // 'a', 'b', 'aa', 'ab', 'ba', 'bb'
  * }
  *
- * @param {Array<string>} chars List of letters to permute
+ * @param {Array<string|number>} [chars=[]] List of letters to permute
  * @param {number} [maxLevels=3] Maximum length of generated word
  */
 function generate(chars = [], maxLevels = 3) {
