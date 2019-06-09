@@ -18,22 +18,15 @@ function generate(chars = [], maxLevels = 3) {
         for (let i = 0; i < chars.length; i++) {
             const char = chars[i];
             const record = (prefix + char);
+            yield record;
 
-            if (index >= level) {
-                yield record;
-            } else {
+            if (index < level - 1) {
                 yield * iteratee(record, index + 1, level);
             }
         }
     }
 
-    function * loop(string) {
-        for (let i = 0; i < maxLevels; i++) {
-            yield * iteratee(string, 0, i);
-        }
-    }
-
-    return loop('');
+    return iteratee('', 0, maxLevels);
 }
 
 module.exports = {
