@@ -17,7 +17,7 @@
         "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
     },
     "dependencies": {
-        "yargs": "^13.2.4"
+        "yargs": "^16.0.0"
     },
     "devDependencies": {
         "coveralls": "^3.0.3",
