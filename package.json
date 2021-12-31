@@ -14,14 +14,15 @@
         "clear": "rm -rf dist/ coverage/ .nyc_output/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
         "test": "jasmine test/**/*.js",
-        "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v"
     },
     "dependencies": {
-        "yargs": "^16.1.1"
+        "yargs": "^17.3.1"
     },
     "devDependencies": {
-        "coveralls": "^3.1.0",
-        "jasmine": "^3.6.3",
+        "coveralls": "^3.1.1",
+        "jasmine": "^3.10.0",
         "nyc": "^15.1.0"
     },
     "repository": {
