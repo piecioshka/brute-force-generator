@@ -6,15 +6,11 @@
 
 :hammer: Build a dictionary by permuting passed letters (using ES2015+)
 
-## Installation
-
-```bash
-npm install [-g] brute-force-generator
-```
-
 ## Usage
 
 ```javascript
+const generate = require('brute-force-generator');
+
 const gen = generate(['a', 'b'], 2);
 
 for (let record of gen) {
@@ -24,8 +20,17 @@ for (let record of gen) {
 
 ## CLI
 
+Installation:
+
 ```bash
-> brute-force-generator --help
+npm install -g brute-force-generator
+```
+
+Help:
+
+```bash
+brute-force-generator --help
+
 Usage: brute-force-generator -a [string] -l [num]
 
 Options:
@@ -35,26 +40,14 @@ Options:
   -l, --length                                                        [required]
 ```
 
-Example of using:
+Usage:
 
 ```bash
 # Lowercase latin alphabet — abcdefghijklmnopqrstuvwxyz
 brute-force-generator -a abcdefghijklmnopqrstuvwxyz -l 5 > latin-5.dic
 
-# Generate infinity wordlist
+# Generate infinity wordlist (may take some time 😈)
 brute-force-generator -a abcdefghijklmnopqrstuvwxyz -l Infinity
-```
-
-## Unit tests
-
-```bash
-npm test
-```
-
-## Code coverage
-
-```bash
-npm run coverage
 ```
 
 ## Related
