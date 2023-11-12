@@ -2,7 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/brute-force-generator.svg)](https://badge.fury.io/js/brute-force-generator)
 [![downloads count](https://img.shields.io/npm/dt/brute-force-generator.svg)](https://www.npmjs.com/~piecioshka)
-[![travis-ci](https://api.travis-ci.com/piecioshka/brute-force-generator.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/brute-force-generator)
 
 :hammer: Build a dictionary by permuting passed letters (using ES2015+)
 
