@@ -59,4 +59,4 @@ brute-force-generator -a abcdefghijklmnopqrstuvwxyz -l Infinity
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2019
+[The MIT License](https://piecioshka.mit-license.org) @ 2019
