@@ -3,7 +3,9 @@
     "version": "1.0.3",
     "description": "Build a dictionary by permuting passed letters (using ES2015+)",
     "main": "src/index.js",
-    "bin": "bin/cli.js",
+    "bin": {
+        "brute-force-generator": "bin/cli.js"
+    },
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
@@ -25,7 +27,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:piecioshka/brute-force-generator.git"
+        "url": "git+ssh://git@github.com/piecioshka/brute-force-generator.git"
     },
     "files": [
         "bin",
