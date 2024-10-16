@@ -1,7 +1,7 @@
 {
     "name": "brute-force-generator",
     "version": "1.0.5",
-    "description": "Build a dictionary by permuting passed letters (using ES2015+)",
+    "description": "🔨 Build a dictionary by permuting passed letters (using ES2015+)",
     "main": "src/index.js",
     "bin": {
         "brute-force-generator": "bin/cli.js"

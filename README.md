@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/brute-force-generator.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/brute-force-generator/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/brute-force-generator/actions/workflows/testing.yml)
 
-:hammer: Build a dictionary by permuting passed letters (using ES2015+)
+🔨 Build a dictionary by permuting passed letters (using ES2015+)
 
 ## Usage
 
