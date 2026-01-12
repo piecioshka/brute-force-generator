@@ -37,13 +37,10 @@ if (argv.version) {
 if (!argv.a || !argv.l) {
     showHelp();
     console.error('');
-    if (!argv.a && !argv.l) {
-        console.error('Missing required arguments: a, l');
-    } else if (!argv.a) {
-        console.error('Missing required argument: a');
-    } else {
-        console.error('Missing required argument: l');
-    }
+    const missing = [];
+    if (!argv.a) missing.push('a');
+    if (!argv.l) missing.push('l');
+    console.error(`Missing required argument${missing.length > 1 ? 's' : ''}: ${missing.join(', ')}`);
     process.exit(1);
 }
 
