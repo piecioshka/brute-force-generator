@@ -10,8 +10,7 @@ const argv = minimist(process.argv.slice(2), {
     }
 });
 
-// Show help
-if (argv.help) {
+function showHelp() {
     console.log('Usage: brute-force-generator -a [string] -l [num]');
     console.log('');
     console.log('Options:');
@@ -19,6 +18,11 @@ if (argv.help) {
     console.log('      --version   Show version number                                  [boolean]');
     console.log('  -a, --alphabet                                                      [required]');
     console.log('  -l, --length                                                        [required]');
+}
+
+// Show help
+if (argv.help) {
+    showHelp();
     process.exit(0);
 }
 
@@ -30,14 +34,8 @@ if (argv.version) {
 }
 
 // Validate required arguments
-if (!argv.a) {
-    console.error('Usage: brute-force-generator -a [string] -l [num]');
-    console.error('');
-    console.error('Options:');
-    console.error('      --help      Show help                                            [boolean]');
-    console.error('      --version   Show version number                                  [boolean]');
-    console.error('  -a, --alphabet                                                      [required]');
-    console.error('  -l, --length                                                        [required]');
+if (!argv.a || !argv.l) {
+    showHelp();
     console.error('');
     if (!argv.a && !argv.l) {
         console.error('Missing required arguments: a, l');
@@ -46,19 +44,6 @@ if (!argv.a) {
     } else {
         console.error('Missing required argument: l');
     }
-    process.exit(1);
-}
-
-if (!argv.l) {
-    console.error('Usage: brute-force-generator -a [string] -l [num]');
-    console.error('');
-    console.error('Options:');
-    console.error('      --help      Show help                                            [boolean]');
-    console.error('      --version   Show version number                                  [boolean]');
-    console.error('  -a, --alphabet                                                      [required]');
-    console.error('  -l, --length                                                        [required]');
-    console.error('');
-    console.error('Missing required argument: l');
     process.exit(1);
 }
 
