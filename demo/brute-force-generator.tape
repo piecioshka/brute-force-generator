@@ -13,7 +13,7 @@ Set MarginFill "#212830"
 Set BorderRadius 10
 
 Hide
-Type 'cd /tmp/brute-force-generator-demo && clear' Enter
+Type 'clear' Enter
 Show
 
 Type "brute-force-generator --help" Sleep 200ms Enter
