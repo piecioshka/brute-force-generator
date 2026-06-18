@@ -10,6 +10,8 @@
 
 🔨 Build a dictionary by permuting passed letters (using ES2015+)
 
+![](demo/brute-force-generator.gif)
+
 ## Usage
 
 ```javascript
