@@ -31,7 +31,8 @@
     },
     "files": [
         "bin",
-        "src"
+        "src",
+        "LICENSE"
     ],
     "keywords": [
         "cli",
