@@ -9,18 +9,22 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "clear": "rm -rf dist/ coverage/ .nyc_output/",
+        "clear": "rm -rf dist/ types/ coverage/ .nyc_output/",
         "clear:all": "rm -rf node_modules/ && npm run clear",
-        "test": "jasmine test/**/*.js",
-        "coverage": "nyc npm run test && nyc report --reporter=html"
+        "check-ts": "tsc --noEmit",
+        "prebuild": "rm -rf dist/ types/",
+        "build": "tsc",
+        "test": "vitest run",
+        "coverage": "vitest run --coverage"
     },
     "dependencies": {
         "minimist": "^1.2.8"
     },
     "devDependencies": {
         "@types/node": "^25.0.6",
-        "jasmine": "^3.10.0",
-        "nyc": "^15.1.0"
+        "@vitest/coverage-v8": "^2.1.5",
+        "typescript": "^5.6.3",
+        "vitest": "^2.1.5"
     },
     "repository": {
         "type": "git",
@@ -31,8 +35,13 @@
     },
     "files": [
         "bin",
-        "src",
-        "LICENSE"
+        "dist",
+        "types",
+        "index.js",
+        "package.json",
+        "README.md",
+        "LICENSE",
+        "!**/*.spec.*"
     ],
     "keywords": [
         "cli",
@@ -45,7 +54,8 @@
         "dict",
         "permutation"
     ],
-    "main": "src/index.js",
+    "main": "index.js",
+    "types": "types/index.d.ts",
     "bin": {
         "brute-force-generator": "bin/cli.js"
     }
