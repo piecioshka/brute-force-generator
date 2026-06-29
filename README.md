@@ -15,7 +15,7 @@
 ## Usage
 
 ```javascript
-const generate = require('brute-force-generator');
+const { generate } = require('brute-force-generator');
 
 const gen = generate(['a', 'b'], 2);
 
