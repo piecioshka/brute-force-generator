@@ -47,7 +47,7 @@ if (!argv.a || !argv.l) {
 const a = String(argv.a).split('');
 const l = Number(argv.l);
 
-const { generate } = require('../src');
+const { generate } = require('../dist/index');
 
 (function main() {
     const gen = generate(a, l);
