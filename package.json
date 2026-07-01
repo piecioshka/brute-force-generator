@@ -1,7 +1,7 @@
 {
     "name": "brute-force-generator",
     "description": "🔨 Build a dictionary by permuting passed letters (using ES2015+)",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
@@ -15,7 +15,8 @@
         "prebuild": "rm -rf dist/ types/",
         "build": "tsc",
         "test": "vitest run",
-        "coverage": "vitest run --coverage"
+        "coverage": "vitest run --coverage",
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
         "minimist": "^1.2.8"
