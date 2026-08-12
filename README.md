@@ -1,6 +1,5 @@
 # brute-force-generator
 
-[![built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)](https://www.typescriptlang.org/)
 [![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](#cli)
 [![node version](https://img.shields.io/node/v/brute-force-generator.svg)](https://www.npmjs.com/package/brute-force-generator)
 [![npm version](https://badge.fury.io/js/brute-force-generator.svg)](https://badge.fury.io/js/brute-force-generator)
@@ -8,6 +7,7 @@
 [![size](https://packagephobia.com/badge?p=brute-force-generator)](https://packagephobia.com/result?p=brute-force-generator)
 [![license](https://img.shields.io/npm/l/brute-force-generator.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/brute-force-generator/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/brute-force-generator/actions/workflows/testing.yml)
+[![typescript](https://img.shields.io/badge/built%20with-TypeScript-3178c6.svg)](https://www.typescriptlang.org/)
 
 🔨 Build a dictionary by permuting passed letters (using ES2015+)
 
