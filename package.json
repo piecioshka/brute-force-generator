@@ -32,7 +32,7 @@
         "url": "git+ssh://git@github.com/piecioshka/brute-force-generator.git"
     },
     "engines": {
-        "node": ">=16.0.0"
+        "node": ">=20"
     },
     "files": [
         "bin",
